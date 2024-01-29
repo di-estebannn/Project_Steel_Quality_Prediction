@@ -1,0 +1,5 @@
+Model,Mean,Standard deviation,MSE on Testing set,MSE on Validation set,Training duration,Parameters
+Multiple Regression,0.006093228,0.01857774,0.006287932,0.006485017,0.200452642,{}
+Random Forest,0.004141866,0.020015752,0.004286809,0.004519707,42.47799547,"{'max_depth': 50, 'n_estimators': 500}"
+Support Vector Machine,0.00498062,0.021461261,0.005248416,0.005097594,22.84293645,"{'C': 5.0, 'gamma': 'scale', 'kernel': 'rbf'}"
+Neural Network,0.005978933,0.020237692,0.006238387,0.006425752,94.82012931,"{'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': 250, 'learning_rate': 'constant', 'learning_rate_init': 0.001, 'max_iter': 500, 'solver': 'adam', 'tol': 0.0001}"
