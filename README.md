@@ -65,7 +65,7 @@ Below is an example repository structure to help you to navigate through the var
 
 ## Project Report Format
 
-### Project Title
+### Project Steel Quality Prediction
 
 Application and comparison of Machine Learning Algorithms for Steel Quality Prediction
 
