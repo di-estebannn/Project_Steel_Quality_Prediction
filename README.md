@@ -122,11 +122,34 @@ import numpy as np
 
 import os
 
+import matplotlib.pyplot as plt
+
+impor time
+
+from sklearn.model_selection import GridSearchCV
+
+from sklearn.metrics import mean_squared_error
+
+from sklearn.model_selection import learning_curve
+
+from sklearn.linear_model import LinearRegression
+
+from sklearn.ensemble import RandomForestRegressor
+
+from sklearn.svm import SVR
+
+from sklearn.neural_network import MLPRegressor
+
 ## Results
 
 **Findings**
 
 The models with the lowest error are the Random Fortes and the Support Vector Machine. Furthermore, in their learning curve you could see that they were already stabilizing and more data would overfit them. However, although the Neural Network did not perform as well, it did have the potential to continue learning, but there was not enough data.
+
+**Visualizations**
+
+![image](https://github.com/di-estebannn/Project_Steel_Quality_Prediction/assets/122711172/926311b9-12d3-4e89-b12c-8ccf6188c7d4)
+
 ![learning_curve_multiple_regression](https://github.com/di-estebannn/Project_Steel_Quality_Prediction/assets/122711172/5aaed1d2-336b-44f7-83fd-89c0dbcbf9f5)
 
 ![learning_curve_random_forest](https://github.com/di-estebannn/Project_Steel_Quality_Prediction/assets/122711172/f088be42-e670-4745-9566-cfd8834bbb13)
@@ -134,22 +157,6 @@ The models with the lowest error are the Random Fortes and the Support Vector Ma
 ![learning_curve_svm](https://github.com/di-estebannn/Project_Steel_Quality_Prediction/assets/122711172/12dc1fcc-7ad1-4058-9eaf-d7a7cec0f4db)
 
 ![learning_curve_nn](https://github.com/di-estebannn/Project_Steel_Quality_Prediction/assets/122711172/5550cf08-44fa-42dc-b9f5-1796371076ad)
-
-
-**Visualizations**
-
-![image](https://github.com/di-estebannn/Project_Steel_Quality_Prediction/assets/122711172/926311b9-12d3-4e89-b12c-8ccf6188c7d4)
-
-
-Model,____________________Mean,_________Standard deviation,___MSE on Testing set,___MSE on Validation set,___Training duration
-
-Multiple Regression,______0.00609323,___0.01857774,___________0.00628793,___________0.00648502,______________0.20045264
-
-Random Forest,____________0.00414187,___0.02001575,___________0.00428681,___________0.00451971,______________42.4779955
-
-Support Vector Machine,___0.00498062,___0.02146126,___________0.00524842,___________0.00509759,______________22.8429364
-
-Neural Network,___________0.00597893,___0.02023769,___________0.00623839,___________0.00642575,______________94.8201293
 
 ## Conclusion
 
